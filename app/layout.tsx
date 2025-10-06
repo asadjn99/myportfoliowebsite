@@ -5,18 +5,12 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Toaster } from "@/components/ui/toaster"
 
-
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  viewport: "width=device-width, initial-scale=1.0",
-
-  title: "Asad Ullah | Portfolio",
-  description: "Portfolio of Asad Ullah, Graduate Computer Science Student specializing in  Web Development, Graphic Design, IoT, CCTV, Documents coltorlling and Volunteer",
-    // generator: 'v0.app'
-    icons: {
-    icon: "/images/profile.png",
-  },
+  title: "Asad Ullah | AI Engineer",
+  description: "Portfolio of Asad Ullah, AI Engineer specializing in machine learning, deep learning, and data science",
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

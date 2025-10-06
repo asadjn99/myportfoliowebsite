@@ -32,6 +32,7 @@ export function Navbar() {
     { name: "About", href: "#about" },
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "/projects" },
     { name: "Contact", href: "#contact" },
   ]
 
@@ -148,17 +149,6 @@ export function Navbar() {
                   </Link>
                 </motion.div>
               ))}
-              <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}>
-                <Link
-                  href="/documents/asad-ullah-resume.pdf"
-                  target="_blank"
-                  download
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Download Resume
-                </Link>
-              </motion.div>
             </div>
           </motion.div>
         )}
