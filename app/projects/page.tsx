@@ -3,6 +3,9 @@ import { ProjectsBrowser } from "@/components/projects/projects-browser"
 
 export default function ProjectsPage() {
   return (
+    import { Navbar } from "@/components/navbar"
+{/* Hero Section */}
+      <HeroSection />
     <main className="min-h-screen bg-background">
       <section className="container mx-auto max-w-6xl px-4 py-12">
         <div className="mb-8">
