@@ -19,10 +19,23 @@ export async function sendContactEmail(formData: FormData) {
     const validatedFields = formSchema.safeParse(formData)
 
     if (!validatedFields.success) {
-      return { success: false, error: "Invalid form data. Please check your inputs." }
+      const errors = validatedFields.error.errors.map((err) => err.message).join(", ")
+      return { success: false, error: errors }
     }
 
     const { name, email, subject, message } = validatedFields.data
+
+    // Verify environment variables exist
+    // if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    //   console.error("Email configuration missing")
+    //   return { success: false, error: "Email service is not configured properly." }
+    // }
+
+if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+  console.error("Email configuration missing")
+  return { success: false, error: "Email service is not configured properly." }
+}
+
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
@@ -33,32 +46,68 @@ export async function sendContactEmail(formData: FormData) {
       },
     })
 
-    // Email content
-    const mailOptions = {
+    // Verify connection
+    await transporter.verify()
+
+    // Email to admin (you)
+    const adminMailOptions = {
       from: process.env.EMAIL_USER,
-      to: "pitafimurad99@gmail.com", // Your email address
-      subject: `Portfolio Contact: ${subject}`,
+      to: process.env.EMAIL_USER, // Your email from env
+      subject: `New Contact Form: ${subject}`,
       text: `
         Name: ${name}
         Email: ${email}
+        Subject: ${subject}
         
         Message:
         ${message}
       `,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <h3>Message:</h3>
-        <p>${message}</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #333;">New Contact Form Submission</h2>
+          <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Subject:</strong> ${subject}</p>
+            <h3>Message:</h3>
+            <p>${message.replace(/\n/g, "<br>")}</p>
+          </div>
+        </div>
       `,
     }
 
-    // Send email
-    await transporter.sendMail(mailOptions)
+    // Send email to admin
+    await transporter.sendMail(adminMailOptions)
 
-    return { success: true }
+    // Confirmation email to user
+    const userMailOptions = {
+      from: process.env.EMAIL_USER,
+      to: email,
+      subject: "We received your message",
+      text: `
+        Hi ${name},
+        
+        Thank you for contacting us. We have received your message and will get back to you soon.
+        
+        Your Message:
+        ${message}
+      `,
+      html: `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #333;">Thank You for Contacting Us</h2>
+          <p>Hi ${name},</p>
+          <p>We have received your message and will get back to you soon.</p>
+          <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+          <p><strong>Your Message:</strong></p>
+          <p>${message.replace(/\n/g, "<br>")}</p>
+        </div>
+      `,
+    }
+
+    // Send confirmation email to user
+    await transporter.sendMail(userMailOptions)
+
+    return { success: true, message: "Email sent successfully!" }
   } catch (error) {
     console.error("Error sending email:", error)
     return { success: false, error: "Failed to send email. Please try again later." }

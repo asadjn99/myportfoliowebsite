@@ -49,7 +49,7 @@ export function HeroSection() {
                 </Link>
               </Button>
               <Button variant="secondary" asChild className="relative overflow-hidden group">
-                <Link href="/documents/asad-ullah-resume.pdf" target="_blank" download>
+                <Link href="/public/resume.pdf" target="_blank" download>
                   <Download className="w-4 h-4 mr-2" />
                   <span className="relative z-10">Resume</span>
                   <span className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
@@ -63,7 +63,8 @@ export function HeroSection() {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <Link
-                href="https://linkedin.com/in/asadjn99"
+                // href="https://linkedin.com/in/asadjn99"
+                href="mailto:asadjn99@gmail.com"
                 target="_blank"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors transform hover:scale-110 duration-300"
               >
@@ -77,7 +78,9 @@ export function HeroSection() {
                 <Github className="w-6 h-6" />
               </Link>
               <Link
-                href="https://x.com/asadjn99"
+                // href="https://x.com/asadjn99"
+                href="mailto:asadjn99@gmail.com"
+
                 target="_blank"
                 className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors transform hover:scale-110 duration-300"
               >

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink, ChevronRight } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, ChevronRight, Icon } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ContactForm } from "@/components/contact-form"
@@ -8,6 +8,7 @@ import { ScrollIndicator } from "@/components/scroll-indicator"
 import { SmoothScroll } from "@/components/smooth-scroll"
 import { HeroSection } from "@/components/hero-section"
 import { AnimatedSection, ParticleBackground, AnimatedGradientBackground } from "@/components/client-animations"
+
 
 export default function Home() {
   return (
@@ -512,12 +513,12 @@ export default function Home() {
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <Linkedin className="w-5 h-5 text-purple-600 mr-3" />
                     <a
-                      href="https://linkedin.com/in/asadjn99"
+                      // href="https://linkedin.com/in/asadjn99"
                       target="_blank"
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      linkedin.com/in/asadjn99
+                      Linkedin
                     </a>
                   </div>
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
@@ -528,18 +529,18 @@ export default function Home() {
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      github.com/asadjn99
+                      Github
                     </a>
                   </div>
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <ExternalLink className="w-5 h-5 text-purple-600 mr-3" />
                     <a
-                      href="https://x.com/asadjn99"
+                      // href="https://x.com/asadjn99"
                       target="_blank"
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      x.com/asadjn99
+                      X
                     </a>
                   </div>
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
@@ -550,7 +551,7 @@ export default function Home() {
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      facebook.com/asadjn99
+                      Facebook
                     </a>
                   </div>
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
@@ -561,7 +562,7 @@ export default function Home() {
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      instagram.com/asadjn99
+                      Instagram
                     </a>
                   </div>
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
@@ -572,7 +573,7 @@ export default function Home() {
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      snapchat.com/add/asadjn99
+                      Snapchat
                     </a>
                   </div>
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
@@ -583,13 +584,13 @@ export default function Home() {
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
                     >
-                      WhatsApp: (+92) 307‑5993029
+                      WhatsApp
                     </a>
                   </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+                  {/* <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <ExternalLink className="w-5 h-5 text-purple-600 mr-3" />
                     <span className="text-gray-700 dark:text-gray-300">WeChat: @asadjn99</span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 dark:text-gray-300">
@@ -614,7 +615,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <h2 className="text-xl font-bold">Asad Ullah</h2>
-              <p className="text-gray-400">Graphic Designer • Front‑End Developer • IoT & CCTV</p>
+              <p className="text-gray-400">Graphic Designer • Front‑End Developer • IoT Developer</p>
             </div>
             <div className="flex space-x-4">
               <Link
@@ -631,13 +632,13 @@ export default function Home() {
               >
                 <Github className="w-5 h-5" />
               </Link>
-              <Link
+              {/* <Link
                 href="https://x.com/asadjn99"
                 target="_blank"
                 className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 duration-300"
               >
                 <ExternalLink className="w-5 h-5" />
-              </Link>
+              </Link> */}
               <Link
                 href="mailto:asadjn99@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 duration-300"

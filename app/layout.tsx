@@ -8,9 +8,11 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Asad Ullah | AI Engineer",
-  description: "Portfolio of Asad Ullah, AI Engineer specializing in machine learning, deep learning, and data science",
-    generator: 'v0.app'
+  title: "Asad Ullah",
+  description: "Portfolio of Asad Ullah, a skilled software engineer specializing in web development, graphic design, Illustrator, Internet of Things (IoT), cctv, ms office, documents control and data entry.",
+    icons: {
+    icon: "/images/profile.png", 
+  },
 }
 
 export default function RootLayout({
