@@ -100,14 +100,46 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">Documents Controller</h3>
-                    <p className="text-purple-600 dark:text-purple-400 font-medium">Ideal Business Products</p>
+                    <h3 className="text-xl font-bold">Web Developer - intern </h3>
+                    <p className="text-purple-600 dark:text-purple-400 font-medium">Encoder Bytes Private Limited</p>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Jul 2025 – Present</p>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Nov 2025 – Apr 2026 (current)</p>
                 </div>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                  <li>Managing document workflows, archiving, and version control for business operations.</li>
-                  <li>Ensuring accuracy, accessibility, and security of records across departments.</li>
+                  <li>Developing responsive web components and maintaining front-end code quality across active projects.</li>
+                  <li>Supporting ongoing website updates, bug fixes, and UI/UX improvements to enhance overall performance.</li>
+                </ul>
+              </div>
+            </AnimatedSection>
+{/* Graphic DEsign at EncoderBytes */}
+            <AnimatedSection delay={0.4}>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold">Graphic Designer - intern</h3>
+                    <p className="text-purple-600 dark:text-purple-400 font-medium">Encoderbytes Pvt Ltd, Peshawar</p>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Jan 2024 – Jul 2024</p>
+                </div>
+                <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
+                  <li>Produced designs for print and digital, aligned to brand and campaign objectives.</li>
+                  <li>Collaborated with teams to meet timelines and quality standards.</li>
+                </ul>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={0.2}>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold">Administrative and IT Executive</h3>
+                    <p className="text-purple-600 dark:text-purple-400 font-medium">Ideal Business Products</p>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Jul 2025 – Oct 2025</p>
+                </div>
+                <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
+                  <li>Managed document workflows, archiving, and version control for business operations.</li>
+                  <li>Ensured accuracy, accessibility, and security of records across departments.</li>
                 </ul>
               </div>
             </AnimatedSection>
@@ -116,12 +148,12 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">Remote Social Media Graphic Designer</h3>
+                    <h3 className="text-xl font-bold">Graphic Designer - remote</h3>
                     <p className="text-purple-600 dark:text-purple-400 font-medium">
                       Supreme Dental Associates, Peshawar
                     </p>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Apr 2024 – May 2025</p>
+                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Apr 2024 – Jul 2025</p>
                 </div>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
                   <li>Designed social media graphics and marketing creatives to grow engagement and brand reach.</li>
@@ -134,7 +166,7 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">Remote Social Media Graphic Designer</h3>
+                    <h3 className="text-xl font-bold">Graphic Designer - remote</h3>
                     <p className="text-purple-600 dark:text-purple-400 font-medium">
                       Letszu Tours and Travel, Peshawar
                     </p>
@@ -148,21 +180,7 @@ export default function Home() {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection delay={0.4}>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
-                <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold">Graphic Designer</h3>
-                    <p className="text-purple-600 dark:text-purple-400 font-medium">Encoderbytes Pvt Ltd, Peshawar</p>
-                  </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">Jan 2024 – Jul 2024</p>
-                </div>
-                <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                  <li>Produced designs for print and digital, aligned to brand and campaign objectives.</li>
-                  <li>Collaborated with teams to meet timelines and quality standards.</li>
-                </ul>
-              </div>
-            </AnimatedSection>
+            
 
             <AnimatedSection delay={0.5}>
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
@@ -176,9 +194,9 @@ export default function Home() {
                   <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">2021 – Present</p>
                 </div>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                  <li>Supported on-site volunteer efforts, providing aid in communities and during emergencies.</li>
-                  <li>Designed visuals for fundraising and awareness campaigns to boost impact.</li>
-                  <li>Contributed to organizing activities and field operations during relief efforts.</li>
+                  <li>Support on-site volunteer efforts, provide aid in communities and during emergencies.</li>
+                  <li>Design visuals for fundraising and awareness campaigns to boost impact.</li>
+                  <li>Contribut to organizing activities and field operations during relief efforts.</li>
                 </ul>
               </div>
             </AnimatedSection>
