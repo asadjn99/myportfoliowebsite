@@ -42,12 +42,13 @@ export function HeroSection() {
                   <span className="absolute inset-0 bg-white dark:bg-gray-800 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
                 </Link>
               </Button>
-              <Button variant="outline" asChild className="relative overflow-hidden group bg-transparent">
+              {/* Hided projects button */}
+              {/* <Button variant="outline" asChild className="relative overflow-hidden group bg-transparent">
                 <Link href="https://github.com/asadjn99">
                   <span className="relative z-10">View Projects</span>
                   <span className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
                 </Link>
-              </Button>
+              </Button> */}
               {/* Resume Download btn */}
               <Button variant="secondary" asChild className="relative overflow-hidden group">
                 <a href="/resume.pdf" target="_blank" download className="flex items-center">
