@@ -15,7 +15,7 @@ export function HeroSection() {
             <div>
               <AnimatedText text="Asad Ullah" className="text-4xl md:text-5xl font-bold tracking-tight" />
               <AnimatedText
-                text="Graphic Designer • Front-End Developer"
+                text="Front-End Developer • Graphic Designer"
                 className="text-1xl md:text-2xl font-semibold mt-2 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
                 once={true}
               />
@@ -27,7 +27,7 @@ export function HeroSection() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               {
-                "My passion for computer science has made me a skilled graphic designer, front‑end web developer, and IoT developer. I build practical solutions to real problems."
+                "My passion for computer science has made me a skilled front‑end web developer and graphic designer. I build practical solutions to real problems."
               }
             </ClientMotion>
             <ClientMotion
@@ -106,7 +106,7 @@ export function HeroSection() {
             }}
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
-              <Image src="/images/profile.png" alt="Asad Ullah" fill className="object-cover" priority />
+              <Image src="/images/profile.png" alt="Asad Ullah" fill className="object-contain p-1" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-blue-600/20 mix-blend-overlay" />
             </div>
           </ClientMotion>

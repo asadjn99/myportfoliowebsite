@@ -329,7 +329,7 @@ export const projects: Project[] = [
     category: "web-dev",
     description: "Responsive portfolio layout with sections for experience, skills, and contact.",
     tags: ["React", "Next.js", "Tailwind CSS", "UI/UX"],
-    image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211021/placeholder_enttqx.svg`,
+    image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763543586/portfolio-web_jccjeo.png`,
     links: { demo: "https://asadjn99.netlify.app", github: "https://github.com/asadjn99" },
   },
   {
