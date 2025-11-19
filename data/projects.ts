@@ -323,6 +323,19 @@ export const projects: Project[] = [
   image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763540665/chronomax_linkedin_post_nbsbhb.png`,
   links: { demo: "https://chronomax.netlify.app", github: "https://github.com/asadjn99/chrono-max" },
 },
+ {
+  slug: "medifit-medical-store",
+  title: "Medifit – Medical Store",
+  category: "web-dev",
+  description: "A clean and responsive medical store website featuring product listings, categories, cart UI, and a smooth shopping experience. Built for small clinics and pharmacies to manage and showcase essential healthcare products.",
+  tags: ["Next.js", "JavaScript", "TypeScript", "CSS"],
+  image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763547188/medifit_medicalstore_cgegjz.png`,
+  links: { 
+    demo: "https://medifit-medicalstore.vercel.app/", 
+    github: "https://github.com/asadjn99/medifit-medicalstore" 
+  },
+},
+
   {
     slug: "portfolio-website-ui",
     title: "This Portfolio Website",
