@@ -92,12 +92,13 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <Link href="/documents/asad-ullah-resume.pdf" target="_blank" download>
+              {/* Hide btn  */}
+              {/* <Link href="/documents/asad-ullah-resume.pdf" target="_blank" download>
                 <Button variant="outline" size="sm" className="relative overflow-hidden group bg-transparent">
                   <span className="relative z-10">Download Resume</span>
                   <span className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
                 </Button>
-              </Link>
+              </Link> */}
               <ThemeToggle />
             </motion.div>
           </div>
