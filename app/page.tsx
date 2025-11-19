@@ -531,7 +531,7 @@ export default function Home() {
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <Linkedin className="w-5 h-5 text-purple-600 mr-3" />
                     <a
-                      // href="https://linkedin.com/in/asadjn99"
+                      href="https://linkedin.com/in/asad-jn99"
                       target="_blank"
                       className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
                       rel="noreferrer"
@@ -550,7 +550,7 @@ export default function Home() {
                       Github
                     </a>
                   </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+                  {/* <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <ExternalLink className="w-5 h-5 text-purple-600 mr-3" />
                     <a
                       // href="https://x.com/asadjn99"
@@ -560,8 +560,8 @@ export default function Home() {
                     >
                       X
                     </a>
-                  </div>
-                  <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
+                  </div> */}
+                  {/* <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <ExternalLink className="w-5 h-5 text-purple-600 mr-3" />
                     <a
                       href="https://facebook.com/asadjn99"
@@ -593,7 +593,7 @@ export default function Home() {
                     >
                       Snapchat
                     </a>
-                  </div>
+                  </div> */}
                   <div className="flex items-center hover:translate-x-1 transition-transform duration-300">
                     <ExternalLink className="w-5 h-5 text-purple-600 mr-3" />
                     <a
