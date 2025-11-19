@@ -48,13 +48,15 @@ export function HeroSection() {
                   <span className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
                 </Link>
               </Button>
+              {/* Resume Download btn */}
               <Button variant="secondary" asChild className="relative overflow-hidden group">
-                <Link href="/public/resume.pdf" target="_blank" download>
+                <a href="/resume.pdf" target="_blank" download className="flex items-center">
                   <Download className="w-4 h-4 mr-2" />
                   <span className="relative z-10">Resume</span>
                   <span className="absolute inset-0 bg-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
-                </Link>
+                </a>
               </Button>
+
             </ClientMotion>
             <ClientMotion
               className="flex gap-4 pt-2"
@@ -106,7 +108,7 @@ export function HeroSection() {
             }}
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
-              <Image src="/images/profile.png" alt="Asad Ullah" fill className="object-contain" priority />
+              <Image src="/images/profile.png" alt="Asad Ullah" fill className="object-cover p-1" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-blue-600/20 mix-blend-overlay" />
             </div>
           </ClientMotion>
