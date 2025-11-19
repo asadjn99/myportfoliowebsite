@@ -107,10 +107,18 @@ export function HeroSection() {
               stiffness: 100,
             }}
           >
+            {/* Hero section Image */}
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
-              <Image src="/images/profile.png" alt="Asad Ullah" fill className="object-cover p-1" priority />
+              <Image
+                src="/images/profile.png"
+                alt="Asad Ullah"
+                fill
+                className="object-cover object-top p-0.5"
+                priority
+              />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/20 to-blue-600/20 mix-blend-overlay" />
             </div>
+
           </ClientMotion>
         </div>
 
