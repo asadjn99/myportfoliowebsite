@@ -63,8 +63,8 @@ export function HeroSection() {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <Link
-                // href="https://linkedin.com/in/asadjn99"
-                href="mailto:asadjn99@gmail.com"
+                href="https://linkedin.com/in/asad-jn99"
+                // href="mailto:asadjn99@gmail.com"
                 target="_blank"
                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors transform hover:scale-110 duration-300"
               >
@@ -77,7 +77,7 @@ export function HeroSection() {
               >
                 <Github className="w-6 h-6" />
               </Link>
-              <Link
+              {/* <Link
                 // href="https://x.com/asadjn99"
                 href="mailto:asadjn99@gmail.com"
 
@@ -85,7 +85,7 @@ export function HeroSection() {
                 className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors transform hover:scale-110 duration-300"
               >
                 <ExternalLink className="w-6 h-6" />
-              </Link>
+              </Link> */}
               <Link
                 href="mailto:asadjn99@gmail.com"
                 className="text-gray-600 hover:text-red-500 dark:text-gray-400 dark:hover:text-red-400 transition-colors transform hover:scale-110 duration-300"

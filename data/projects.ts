@@ -314,9 +314,18 @@ export const projects: Project[] = [
   },
 
   // Web Development
+ {
+  slug: "chrono-max",
+  title: "ChronoMax",
+  category: "web-dev",
+  description: "A sleek world clock app showing time across 70+ cities with digital & analog views. Pin your favorite timezones, perfect for travelers and remote teams!",
+  tags: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+  image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763540665/chronomax_linkedin_post_nbsbhb.png`,
+  links: { demo: "https://chronomax.netlify.app", github: "https://github.com/asadjn99/chrono-max" },
+},
   {
     slug: "portfolio-website-ui",
-    title: "Modern Portfolio Website",
+    title: "This Portfolio Website",
     category: "web-dev",
     description: "Responsive portfolio layout with sections for experience, skills, and contact.",
     tags: ["React", "Next.js", "Tailwind CSS", "UI/UX"],
@@ -329,7 +338,7 @@ export const projects: Project[] = [
     category: "web-dev",
     description: "Responsive final year project layout with sections for experience, skills, and contact.",
     tags: ["HTML", "CSS", "JSON", "bootstrap CSS", "UI/UX"],
-    image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211021/placeholder_enttqx.svg`,
+    image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763540566/pakhtunkhwa_tourism_hub_uteqjj.png`,
     links: { demo: "https://pakhtunkhwa-tourism-hub.netlify.app", github: "https://github.com/asadjn99" },
   },
 ]
