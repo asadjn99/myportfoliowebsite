@@ -354,4 +354,17 @@ export const projects: Project[] = [
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763540566/pakhtunkhwa_tourism_hub_uteqjj.png`,
     links: { demo: "https://pakhtunkhwa-tourism-hub.netlify.app", github: "https://github.com/asadjn99" },
   },
+  {
+  slug: "weather-checker-webapp",
+  title: "Weather Checker Web App",
+  category: "web-dev",
+  description: "A simple and responsive weather checker app featuring a search bar for finding weather details by city name.",
+  tags: ["HTML", "CSS", "JavaScript", "API (local-browser)"],
+  image: "https://res.cloudinary.com/dvwqnzsgx/image/upload/v1763637222/weather_checker_app_guykeq.png",
+  links: { 
+    demo: "https://weather-webapp-byasad.netlify.app",
+    github: "https://github.com/asadjn99/weather-web-app"
+  }
+},
+
 ]
