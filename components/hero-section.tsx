@@ -15,7 +15,7 @@ export function HeroSection() {
             <div>
               <AnimatedText text="Asad Ullah" className="text-4xl md:text-5xl font-bold tracking-tight" />
               <AnimatedText
-                text="Front-End Developer • Graphic Designer"
+                text="Web Developer • Graphic Designer"
                 className="text-1xl md:text-2xl font-semibold mt-2 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
                 once={true}
               />

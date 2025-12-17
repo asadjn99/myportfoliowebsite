@@ -439,7 +439,7 @@ export default function Home() {
           <div className="mb-12">
             <AnimatedSection direction="left" delay={0.2}>
               <h3 className="text-2xl font-bold mb-6">Education</h3>
-              <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+              <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row justify-between mb-4">
                   <div>
                     <h4 className="text-xl font-semibold">BS Computer Science (ICS/IT)</h4>
@@ -464,31 +464,31 @@ export default function Home() {
             <AnimatedSection direction="right" delay={0.3}>
               <h3 className="text-2xl font-bold mb-6">Certifications & Awards</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">Web Development — BanoQabil IT Program</h4>
                   <p className="text-gray-600 dark:text-gray-400">2024 – 2025 • Peshawar, Pakistan</p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">Graphic Design — Encoderbytes Pvt Ltd (hope87)</h4>
                   <p className="text-gray-600 dark:text-gray-400">Jan 2024 – Mar 2024 • Peshawar, Pakistan</p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">Diploma in Information Technology — CBA Timergara</h4>
                   <p className="text-gray-600 dark:text-gray-400">Feb 2022 – Feb 2023 • Dir Lower, Pakistan</p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">IoT Certificate — NAVTTC (Islamia College Peshawar)</h4>
                   <p className="text-gray-600 dark:text-gray-400">Jun 2023 – Aug 2023 • Peshawar, Pakistan</p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">CCTV (1‑Month) — University of Skills</h4>
                   <p className="text-gray-600 dark:text-gray-400">2025 • Peshawar, Pakistan</p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">English Language — USECS</h4>
                   <p className="text-gray-600 dark:text-gray-400">Jun 2024 – Jan 2025 • Peshawar, Pakistan</p>
                 </div>
-                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 md:col-span-2 shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 transition-transform duration-300">
+                <div className="bg-gray-50 dark:bg-gray-700 rounded-lg p-4 md:col-span-2 shadow-md hover:shadow-lg  hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="font-semibold">Additional Training & Memberships</h4>
                   <ul className="text-gray-600 dark:text-gray-300 list-disc list-inside space-y-1">
                     <li>
