@@ -1,7 +1,4 @@
 
-
-
-
 // data/projects.ts
 export type ProjectCategory = "graphic-design" | "web-dev"
 
@@ -23,7 +20,15 @@ export interface Project {
 const CLOUDINARY_URL = "https://res.cloudinary.com/dvwqnzsgx/image/upload"
 
 export const projects: Project[] = [
+
+
+
+
+  // ........................................
+  // ........................................
   // Graphic Design - Dental Health Posters
+  // ........................................
+  // ........................................
   {
     slug: "dental-health-awareness-poster",
     title: "Dental Health Poster",
@@ -104,8 +109,11 @@ export const projects: Project[] = [
     tags: ["illustrator", "Poster", "Social Media"],
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760554086/dental_treatment_gaxlox.png`,
   },
-
+  // ........................................
+  // ........................................
   // Graphic Design - Other Campaigns
+  // ........................................
+  // ........................................
   {
     slug: "learn-industry-standard-skills-poster",
     title: "Learn Industry Standard Skills",
@@ -197,7 +205,11 @@ export const projects: Project[] = [
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211247/stem_ptojkt.jpg`,
   },
 
+  // ........................................
+  // ........................................
   // Graphic Design - Restaurants
+  // ........................................
+  // ........................................
   {
     slug: "cheezios-restaurant-poster-1",
     title: "Cheezios Pakistan",
@@ -214,8 +226,11 @@ export const projects: Project[] = [
     tags: ["illustrator", "Poster", "Social Media"],
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211225/cheezious_corztq.jpg`,
   },
-
+  // ........................................
+  // ........................................
   // Graphic Design - Branding & Other
+  // ........................................
+  // ........................................
   {
     slug: "cafe-brand-identity",
     title: "Cafe Brand Identity",
@@ -240,8 +255,11 @@ export const projects: Project[] = [
     tags: ["Canva", "Social Media", "Illustrator"],
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211209/travel-social-media-design-templates_lffymf.jpg`,
   },
-
+  // ........................................
+  // ........................................
   // Graphic Design - Cricket Tournament
+  // ........................................
+  // ........................................
   {
     slug: "cricket-tournament-poster-1",
     title: "Cricket Points Table Poster",
@@ -268,8 +286,11 @@ export const projects: Project[] = [
   },
 
 
-
+  // ........................................
+  // ........................................
   // Graphic Design - Certificates
+  // ........................................
+  // ........................................
   {
     slug: "certificate-design-print-1",
     title: "Certificate Design",
@@ -294,8 +315,11 @@ export const projects: Project[] = [
     tags: ["Illustrator", "Certificate", "Print"],
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211039/certificate2_ltamko.png`,
   },
-
+  // ........................................
+  // ........................................
   // Graphic Design - Personal
+  // ........................................
+  // ........................................
   {
     slug: "asad-at-usecs",
     title: "Me at USECS University",
@@ -312,8 +336,11 @@ export const projects: Project[] = [
     tags: ["Illustrator", "Certificate", "Print"],
     image: `https://res.cloudinary.com/dvwqnzsgx/image/upload/v1760211053/president_bx54rd.png`,
   },
-
+  // ........................................
+  // ........................................
   // Web Development
+  // ........................................
+  // ........................................
  {
   slug: "chrono-max",
   title: "ChronoMax",
@@ -338,7 +365,7 @@ export const projects: Project[] = [
 
   {
     slug: "portfolio-website-ui",
-    title: "This Portfolio Website",
+    title: "Portfolio Website",
     category: "web-dev",
     description: "Responsive portfolio layout with sections for experience, skills, and contact.",
     tags: ["React", "Next.js", "Tailwind CSS", "UI/UX"],
@@ -366,5 +393,29 @@ export const projects: Project[] = [
     github: "https://github.com/asadjn99/weather-web-app"
   }
 },
+{
+    slug: "finance-flow",
+    title: "FinanceFlow",
+    category: "web-dev",
+    description: "A professional and fully responsive finance-focused website designed for seamless financial tracking and data visualization.",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    image: "https://res.cloudinary.com/dvwqnzsgx/image/upload/v1765973643/FinanceFlow_hncfj9.png",
+    links: { 
+      demo: "https://finance-flow-asad.netlify.app/",
+      github: "https://github.com/asadjn99/finance-flow"
+    }
+  },
+  {
+    slug: "delish-restaurant-cafe",
+    title: "Delish - Restaurant Cafe",
+    category: "web-dev",
+    description: "A modern, aesthetic restaurant website showcasing interactive menus, gallery sections, and a sleek user interface.",
+    tags: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    image: "https://res.cloudinary.com/dvwqnzsgx/image/upload/v1765973645/DelishCafeRestaurant_tsfu4d.png",
+    links: { 
+      demo: "https://delish-cafe-restaurant.netlify.app/",
+      github: "https://github.com/asadjn99/delish-cafe"
+    }
+  },
 
 ]

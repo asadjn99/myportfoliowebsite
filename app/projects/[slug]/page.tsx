@@ -4,6 +4,7 @@ import { projects } from "@/data/projects"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
+
 export default function ProjectDetail({ params }: { params: { slug: string } }) {
   const project = projects.find((p) => p.slug === params.slug)
   if (!project) return notFound()
