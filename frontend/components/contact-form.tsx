@@ -1,10 +1,8 @@
-
 "use client"
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Check, Send, Loader2 } from "lucide-react"
-import { sendContactEmail } from "@/app/actions"
 import { useToast } from "@/hooks/use-toast"
 import { cn } from "@/lib/utils"
 
@@ -86,8 +84,18 @@ export function ContactForm() {
     setIsSubmitting(true)
     
     try {
-      const result = await sendContactEmail(formData)
-      if (result.success) {
+      // ✅ CHANGED: Use fetch to call your Node.js Backend
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/email/send`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (response.ok && result.success) {
         // 4. Clear Form immediately
         setFormData({ name: "", email: "", subject: "", message: "" })
         
@@ -100,9 +108,10 @@ export function ContactForm() {
         }, 3000)
 
       } else {
-        toast({ title: "Error", description: "Something went wrong.", variant: "destructive" })
+        toast({ title: "Error", description: result.error || "Something went wrong.", variant: "destructive" })
       }
-    } catch {
+    } catch (error) {
+      console.error(error)
       toast({ title: "Error", description: "Failed to send.", variant: "destructive" })
     } finally {
       setIsSubmitting(false)

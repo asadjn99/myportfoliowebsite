@@ -1,19 +1,18 @@
-"use server";
+const express = require('express');
+const router = express.Router();
+const nodemailer = require('nodemailer');
 
-import nodemailer from "nodemailer";
+// POST route handler
+router.post('/send', async (req, res) => {
+  // Extract data sent from the frontend
+  const { name, email, subject, message } = req.body;
 
-interface ContactFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
-
-export async function sendContactEmail(formData: ContactFormData) {
-  const { name, email, subject, message } = formData;
+  // Basic validation
+  if (!name || !email || !message) {
+    return res.status(400).json({ success: false, error: 'Name, email, and message are required' });
+  }
 
   // 1. Setup Transporter
-  // Make sure EMAIL_USER and EMAIL_PASS are in your .env.local file
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -23,9 +22,9 @@ export async function sendContactEmail(formData: ContactFormData) {
   });
 
   try {
-    // --- DESIGNING THE EMAIL ---
+    // --- DESIGNING THE EMAIL (Your Exact Design) ---
 
-    const emailSubject = `[Portfolio] ${subject}`;
+    const emailSubject = `[Portfolio] ${subject || 'New Message'}`;
 
     // 2. Professional HTML Body
     const emailHtml = `
@@ -82,7 +81,7 @@ export async function sendContactEmail(formData: ContactFormData) {
 
             <div class="info-group">
               <span class="label">Subject</span>
-              <div class="value">${subject}</div>
+              <div class="value">${subject || 'No Subject'}</div>
             </div>
 
             <div class="info-group">
@@ -107,14 +106,18 @@ export async function sendContactEmail(formData: ContactFormData) {
     await transporter.sendMail({
       from: `"${name}" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
-      replyTo: email, // by click the email kam 6 email ke mata raghly ye hghi ta direct email kege
+      replyTo: email, 
       subject: emailSubject,
       html: emailHtml,
     });
 
-    return { success: true };
+    // Success response to frontend
+    res.status(200).json({ success: true, message: 'Email sent successfully' });
+
   } catch (error) {
     console.error("Email Error:", error);
-    return { success: false, error: "Failed to send message. Please try again." };
+    res.status(500).json({ success: false, error: "Failed to send message." });
   }
-}
+});
+
+module.exports = router;

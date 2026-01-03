@@ -10,6 +10,8 @@ const skillRoutes = require('./routes/skillRoutes');
 const educationRoutes = require('./routes/educationRoutes'); 
 const contactRoutes = require('./routes/contactRoutes');
 const authRoutes = require('./routes/authRoutes'); 
+const emailRoutes = require('./routes/emailRoutes');
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -38,6 +40,7 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/skills', skillRoutes);
 app.use('/api/education', educationRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/email', emailRoutes);
 // login
 app.use('/api/auth', authRoutes);
 
